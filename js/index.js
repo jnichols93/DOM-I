@@ -62,6 +62,10 @@ let topContentH4 = document.querySelectorAll(".top-content .text-content h4");
 topContentH4[0].innerText = siteContent["main-content"]["features-h4"];
 topContentH4[1].innerText = siteContent["main-content"]["about-h4"];
 
+let topContentP = document.querySelectorAll(".top-content .text-content p");
+topContentP[0].innerText = siteContent["main-content"]["features-content"];
+topContentP[1].innerText = siteContent["main-content"]["about-content"];
+///main
 let mainContentImg = document.querySelector("#middle-img");
 mainContentImg.setAttribute(
   "src",
@@ -71,7 +75,13 @@ mainContentImg.setAttribute(
 let bottomContentH4 = document.querySelectorAll(
   ".bottom-content .text-content h4"
 );
+bottomContentH4[0].innerText = siteContent["main-content"]["services-h4"];
+bottomContentH4[1].innerText = siteContent["main-content"]["product-h4"];
+bottomContentH4[2].innerText = siteContent["main-content"]["vision-h4"];
 
+let bottomContentP = document.querySelectorAll(
+  ".bottom-content .text-content p"
+);
 bottomContentP[0].innerText = siteContent["main-content"]["services-content"];
 bottomContentP[1].innerText = siteContent["main-content"]["product-content"];
 bottomContentP[2].innerText = siteContent["main-content"]["vision-content"];
@@ -86,4 +96,3 @@ contactPs[2].innerText = siteContent["contact"]["email"];
 
 let footer = document.querySelector("footer p");
 footer.innerText = siteContent["footer"]["copyright"];
-
