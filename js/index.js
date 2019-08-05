@@ -49,3 +49,8 @@ navAList[4].innerText = siteContent["nav"]["nav-item-5"];
 navAList[5].innerText = siteContent["nav"]["nav-item-6"];
 ///END NAV
 
+/// CTA
+let ctaHeader = document.querySelector(".cta-text h1");
+ctaHeader.innerText = siteContent["cta"].h1;
+let ctaButton = document.querySelector(".cta-text button");
+ctaButton.innerText = siteContent["cta"].button;
